@@ -41,7 +41,7 @@ int main() {
 				while(cpflen != 11);
 				do{
 					check = 0;
-					printf("Qual setor deseja ser atendido:\n1 - Abertura de conta\n2 - Caixa\n3 - Gerente Pessoa Física\n4 - Gerente Pessoa Jurídica\n\n");
+					printf("Qual setor deseja ser atendido:\n1 - Abertura de conta\n2 - Caixa\n3 - Gerente Pessoa FÃ­sica\n4 - Gerente Pessoa JurÃ­dica\n\n");
 					scanf("%d", &f[i].tipo);
 					fflush(stdin);
 					if(f[i].tipo<1||f[i].tipo>4){
@@ -55,7 +55,7 @@ int main() {
 				}
 				while(check !=1);
 				system("cls");
-				printf("Sua solicitação foi salva no sistema\n");
+				printf("Sua solicitaÃ§Ã£o foi salva no sistema\n");
 				system("pause");
 				system("cls");
 				i = (i + 1);
@@ -77,11 +77,11 @@ int main() {
 							break;
 						}
 						case 3:{
-							printf("Tipo de Atendimento - 3 - Gerente Pessoa Física\n");
+							printf("Tipo de Atendimento - 3 - Gerente Pessoa FÃ­sica\n");
 							break;
 						}
 						case 4:{
-							printf("Tipo de Atendimento - 4 - Gerente Pessoa Jurídica\n");
+							printf("Tipo de Atendimento - 4 - Gerente Pessoa JurÃ­dica\n");
 							break;
 						}
 					};
@@ -108,13 +108,13 @@ int main() {
 				for(i=0;i<max;i++){
 					if(f[i].tipo ==3){
 						printf("Nome: %s\nCPF: %s\n", f[i].nome,f[i].cpf);
-						printf("Setor 3 - Gerente Pessoa Física\n=====================================\n");
+						printf("Setor 3 - Gerente Pessoa FÃ­sica\n=====================================\n");
 					}
 				}
 				for(i=0;i<max;i++){
 					if(f[i].tipo == 4){
 						printf("Nome: %s\nCPF: %s\n", f[i].nome,f[i].cpf);
-						printf("Setor 4 - Gerente Pessoa Jurídica\n=====================================\n");
+						printf("Setor 4 - Gerente Pessoa JurÃ­dica\n=====================================\n");
 					}
 				}
 				system("pause");
